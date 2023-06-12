@@ -1,0 +1,218 @@
+@import '../../mixins';
+
+.mobile {
+  display: none;
+
+  @include onMobile {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 16px 36px;
+    width: 328px;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  @include onMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    margin-bottom: 36px;
+    margin-left: 14px; 
+
+    z-index: 1;
+  }
+
+  &__info {
+    @include onMobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6px;
+    }
+
+    &--style {
+      @include onMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        width: 88px;
+        height: 24px;
+  
+        background-color: #302E5A;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 11px;
+      }
+    }
+
+    &--duration {
+      @include onMobile {
+        width: 84px;
+      }
+    }
+  }
+}
+
+.main {
+  &__classification {
+    @include onMobile {
+      margin-left: 113px;
+      width: 89px;
+  
+      background-color: #4252D1;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+  }
+
+  &__title {
+    @include onMobile {
+      font-weight: 800;
+      font-size: 52.7273px;
+      line-height: 65px;
+      text-align: center;
+      color: #FF3459;
+      text-transform: uppercase;
+    }
+  }
+
+  &__explanation {
+    @include onMobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 21px;
+    }
+    
+    &--part1 {
+      @include onMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 76.26px;
+        height: 27.53px;
+
+        background-color: #FF3459;
+        border-radius: 3.57298px;
+        transform: matrix(1, -0.06, 0.06, 1, 0, 0);
+
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      
+      &--text {
+        @include onMobile {
+          transform: matrix(1, 0.06, -0.06, 1, 0, 0);
+        }
+      }
+    }
+
+    &--part2 {
+      @include onMobile {
+        margin: 0;
+
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  &__article {
+    @include onMobile {
+      margin-bottom: 20px;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 148%;
+      text-align: center;
+    }
+
+    &--selection {
+      @include onMobile {
+        color: #4252D1;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.footer {
+  @include onMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 1;
+  }
+
+  &__bonus {
+    @include onMobile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 22px;
+      gap: 16px;
+    }
+
+    &__icon {
+      @include onMobile {
+        width: 45.81px;
+        height: 45.81px;
+      }
+    }
+
+    &--title {
+      @include onMobile {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 148%;
+      }
+    }
+
+    &__text {
+      @include onMobile {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 148%;
+      }
+    }
+  }
+
+  &__infoSpeaker {
+    @include onMobile {
+      display: flex;
+      gap: 16px;
+    }
+
+    &__img {
+      @include onMobile {
+        width: 46.38px;
+        height: 43.63px;
+      }
+    }
+
+    &--title {
+      @include onMobile {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 120%;
+  
+        text-transform: uppercase;
+      }
+    }
+
+    &__text {
+      @include onMobile {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+      }
+    }
+  }
+}

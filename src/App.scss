@@ -1,0 +1,49 @@
+@import './mixins';
+
+.app {
+  position: relative;
+  overflow: hidden;
+  font-family: 'Gilroy-Regular', sans-serif;
+  background-color:  #242731;
+  height: 100%;
+  width: 100%;
+
+  color: #FFFFFF;
+}
+
+.blueBack {
+  position: absolute;
+  z-index: 0;
+  width: 790.65px;
+  height: 793.23px;
+  left: 1068.67px;
+  bottom: 342.77px;
+
+  background: #332F65;
+  opacity: 0.8;
+  filter: blur(103.131px);
+  transform: rotate(9.41deg);
+}
+
+.stain {
+  position: absolute;
+  width: 399.01px;
+  height: 400.31px;
+  left: -31.33px;
+  bottom: 489.69px;
+
+  background: #332F65;
+  opacity: 0.5;
+  filter: blur(103.131px);
+  transform: rotate(9.41deg);
+
+  @include onMobile {
+    z-index: 0;
+    width: 912px;
+    height: 912px;
+    left: -151px;
+    top: 430px;
+
+    filter: blur(250px);
+  }
+}

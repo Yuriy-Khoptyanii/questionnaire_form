@@ -1,0 +1,126 @@
+@import '../../mixins';
+
+.pageForm {
+  z-index: 1;
+  padding: 50px 59px;
+
+  background-color: #303A53;
+  border-radius: 10px;
+  
+  @include onMobile {
+    padding: 41px 21px 40px 21px;
+    margin-bottom: 36px;
+
+    border-radius: 8.96175px;
+    box-shadow: 0px 8.96175px 44.8087px rgba(40, 127, 165, 0.1);
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+
+    @include onMobile {
+      margin-bottom: 18px;
+
+      font-size: 20px;
+    }
+  }
+
+  &__argeeMessage {
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 149%;
+    color: rgba(255, 255, 255, 0.5);
+
+    @include onMobile {
+      font-size: 11px;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+
+  &__input {
+    position: relative;
+    width: 100%;
+    
+    &__field {
+      height: 51px;
+      margin-bottom: 14px;
+      padding-left: 22px;
+
+      box-sizing: border-box;
+      width: 100%;
+
+      background-color: #272D3D;
+      border-radius: 5px;
+      border: none;
+
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 22px;
+      color: #FFFFFF;
+
+      @include onMobile {
+        padding-left: 26px;
+
+        height: 46px;
+        border-radius: 4.5px;
+      }
+
+      &::placeholder {
+        color: #D7D7D7;
+      }
+    }
+
+    &__error {
+      position: absolute;
+      left: 158px;
+      top: 18px;
+
+      font-size: 11px;
+      color: red;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 20px;
+    width: 248px;
+    height: 51px;
+
+    background-color: #FF3459;
+    border: none;
+    border-radius: 5px;
+
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    cursor: pointer;
+
+    @include onMobile {
+      margin-bottom: 18.45px;
+
+      width: 222.25px;
+      height: 45.55px;
+
+      background-color: #0048FF;
+      border-radius: 4.5px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+.test .selected-flag:hover, .react-tel-input .selected-flag:focus {
+  background-color: transparent !important;
+}

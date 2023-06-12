@@ -1,37 +1,33 @@
-# Vite + React + Typescript + Eslint + Prettier
+# Registration questionnaire form
 
-A starter for React with Typescript with the fast Vite and all static code testing with Eslint and formatting with Prettier.
+## How to start
 
-![Vite + React + Typescript + Eslint + Prettier](/resources/screenshot.png)
+### visit the [demo page](https://yuriy-khoptyanii.github.io/questionnaire_form).
 
-I found out about Vite and I wanted to have a boilerplate for the technologies that I use. You can find more about these in the following links: [Vite](https://github.com/vitejs/vite), [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), [Eslint](https://eslint.org/), [Prettier](https://prettier.io/).
+### To run locally:
 
-## Installation
+1. Clone the project to your local machine
+2. yarn install
+3. yarn dev
+4. Open the app in your web browser by navigating to http://localhost:3000
 
-Clone the repo and run `yarn install`
+## What is this task about
 
-or Run command
+This task is to reproduce a pixel-perfect layout based on the example from [Figma](https://www.figma.com/file/3KC1xPjqWJS9xtGBRfMwIo/%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%BD%D0%B0-%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D1%83?type=design&node-id=0-1&t=xuOt3KQZFM3w6ma4-0)
 
-```
-npx degit TheSwordBreaker/vite-reactts-eslint-prettier project-name
-```
+A form has been configured with validation to check the fields of this form.
 
-## Start
+It is possible to select a country in the phone number field.
 
-After the successfull installation of the packages: `yarn dev`
+Used Formspree to send form data to mail.
 
-## Steps in Vscode
+## Technologies
 
-#### (works with better with this template)
-
-1. Install Eslint and prettier extension for vs code.
-2. Make Sure Both are enabled
-3. Make sure all packages are Installed. (Mostly Eslint and prettier in node_modules)
-4. Enable formatOnSave of vs code
-5. Open a .tsx file and check if the bottom right corners of vs code have Eslint and Prettier with a double tick
-
-![Screenshot (253)_LI](https://user-images.githubusercontent.com/52120562/162486286-7383a737-d555-4f9b-a4dd-c4a81deb7b96.jpg)
-
-If Everything is Good Then It Should Work, but let me new if something else happens
-
-Made with ❤️ by theSwordBreaker(we Destory all types of sword ⚡)
+- React with hooks
+- Typescript
+- Axios
+- Formik
+- Yup
+- React-phone-number-input
+- SCSS
+- Formspree
