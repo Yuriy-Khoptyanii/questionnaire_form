@@ -1,10 +1,11 @@
 {
   "name": "vite-reactts-eslint-prettier",
   "version": "0.0.0",
-  "homepage": "https://yuriy-khoptyanii.github.io/questionnaire_form",
+  "homepage": "https://Yuriy-Khoptyanii.github.io/questionnaire_form",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "serve": "vite preview",
